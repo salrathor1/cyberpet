@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cyber Pet Challenge</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="gameBox">
+            <div class="box">
+                <div class="font" >  Moves: <span id="moves">0</span></div>
+                <h1 class="font" id="status"> Current Status</h1>
+                <div class="font" >  Hunger Level: <span id="hungerLevel">10</span></div>
+                <div class="font">Thirst Level: <span id="thirstLevel">10</span></div>
+                <div class="font"> Happiness Level: <span id="happinessLevel">10</span></div>
+
+            </div>
+            <div class="box">
+                <h1 id="name">Enter your name then select your chacter!</h1>
+                <h3 id="animalAction">-</h3>
+                <img id="animalImg" src="" height="200px" alt="Please Select character below">
+                Name: <input id="userNameText" type="text"> <button id="userNameBtn">Save Name</button>
+                <button id="resetBtn">Reset</button>
+
+            </div>
+            <div class="box">
+                <h1>Actions</h1>
+                <div class="action" id="feedBtn">Feed</div>
+                <div class="action" id="giveWaterBtn">Give Water</div>
+                <div class="action" id="playBtn">Play</div>
+
+            </div>
+        </div>
+
+        <div class="characterBox">
+            <div class="charSelector">
+                <div id="dog"><img src="images/dog.jpg" alt="">Doggie</div>
+                <div id="cat"><img src="images/cat.jpg" alt="">Cat</div>
+                <div id="horse"><img src="images/horse.jpg" alt="">Horse</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
